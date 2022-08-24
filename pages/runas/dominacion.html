@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="League of Legends">
+    <meta name="keywords"  content="AATROX, LOL, CAMPEONES, RUNAS, LEAGUE OF LEGENDS">
+
+    <link rel="shortcut icon" type="x-icon" href="../../img/logo/oa.png">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/main.css">
+    <title> Dominación </title>
+</head>
+<body class="dom">
+      <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid h-100">
+                <a class="navbar-brand" href="../../index.html"> <img src="../../img/logo/oa-logo.png" alt="Inicio"> </a>
+                <button class="navbar-toggler bg-danger p-2 m-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"> </span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav fs-6">
+                    <a class="nav-link link-danger text-light" href="../../pages/campeones.html"> Campeones </a>
+                    <a class="nav-link link-danger text-light" href="../../pages/objetos.html"> Objetos </a>
+                    <a class="nav-link link-danger text-danger" href="../../pages/runas.html"> Runas </a>
+                    <a class="nav-link link-danger text-light" href="../../pages/hechizos.html"> Hechizos </a>
+                </div>
+            </div>
+        </nav>
+      </header>
+      <main class="container-fluid">
+        <section class="runas row">
+            <section class="col-12">
+                <h2 class="p"> Centrada en los personajes que hacen daño explosivo instantáneo, por ejemplo campeones asesinos, magos de combo, algunos ADC's... Vamos, los personajes que entran y salen de combate rápidamente. </h2>
+                <h1 class="b"> Rama principal - Atributos esenciales </h1>
+                <div>
+                    <img loading="lazy" src="../../img/runas/dominacion/Electrocute.png" alt="Electrocutar">
+                    <p> <span class="span-2"> Electrocutar: </span> Golpear a un campeón con 3 ataques o habilidades diferentes en un margen de 3 s hace que inflijas daño adaptable adicional. Daño (50-220 +0,50 de DA adicional, +0,3 de PH) de daño. Enfriamiento 50-25 s. </p>
+                </div>
+                <div>
+                    <img loading="lazy" src="../../img/runas/dominacion/predator.png" alt="Depredador">
+                    <p> <span class="span-2"> Depredador: </span> Encanta las botas con el efecto activo "Depredador". Tras 1,5 s de canalización fuera de combate, otorga un 45% de velocidad de movimiento durante 15 s. El efecto termina al recibir daño de ataques o habilidades, y al hacerlo inflige 60-140 (+0,2 de DA adicional) (+0,3 de PH) de daño adicional adaptable. Enfriamiento de 180 s. Empieza la partida en enfriamiento y entra en enfriamiento si se interrumpe la canalización. </p>
+                </div>
+                <div>
+                    <img loading="lazy" src="../../img/runas/dominacion/dark_harvest.png" alt="Cosecha oscura">
+                    <p> <span class="span-2"> Cosecha oscura: </span> Los campeones, súbditos grandes y monstruos gigantes sueltan esencias de alma al morir. Recoge almas para obtener Alma cargada. Tu siguiente ataque contra un campeón o estructura consume Alma cargada para infligir daño adaptable adicional. Alma cargada dura 20 s, pero aumenta a 300 s después de recoger 150 esencias de alma. Daño adicional 40-80 (+0,25 de DA adicional) (+0,2 de PH) + esencias de alma recogidas (campeones 6, monstruos 2, súbditos 4). </p>
+                </div>
+                <div>
+                    <img loading="lazy" src="../../img/runas/dominacion/hail_of_blades.png" alt="Lluvia de cuchillas">
+                    <p>  <span class="span-2"> Lluvia de cuchillas: </span> Atacar a un campeón enemigo activa este efecto, con 2 acumulaciones restantes. Mientras está activo, obtienes 110% de velocidad de ataque adicional y tu límite de velocidad de ataque aumenta temporalmente. Dura 3 segundos, pero su duración se actualiza al atacar a los campeones enemigos hasta que se consumen todas las acumulaciones. Se consume 1 acumulación por ataque básico y se gana 1 acumulación cada vez que se lanza una habilidad que restablezca el temporizador de ataque básico. Enfriamiento de 12 s. </p>
+                </div>
+            </section>
+        </section>
+        <section class="ranuras row">
+            <section class="col-4">
+                <h3 class="b"> Ranura 1 </h3>
+                <div>
+                    <div id="tooltip">
+                        <span id="tooltiptext"> Golpe bajo </span>
+                        <span> <img loading="lazy" src="../../img/runas/dominacion/Cheap_Shot.png" alt="Golpe bajo" class="ranura1"> </span>
+                    </div>
+                    <p> Dañar a campeones con movimiento o acciones reducidas ingle 12-30 de daño verdadero adicional (según el nivel). Enfriamiento de 4 s. Se activa con el daño de después de la inmovilización. </p>
+                </div>
+                <div>
+                    <div id="tooltip">
+                        <span id="tooltiptext"> Sabor a sangre </span>
+                        <span> <img loading="lazy" src="../../img/runas/dominacion/Taste_of_Blood.png" alt="Sabor a sangre" class="ranura1"> </span>
+                    </div>
+                    <p> Te curas cuando dañas a un campeón enemigo. Curación 18-35 (+0,20 de DA adicional, +0,1 de PH) de vida (según el nivel). Enfriamiento de 20 s. </p>
+                </div>
+                <div>
+                    <div id="tooltip">
+                        <span id="tooltiptext"> Impacto repentino </span>
+                        <span> <img loading="lazy" src="../../img/runas/dominacion/Sudden_Impact.png" alt="Impacto repentino" class="ranura1"> </span>
+                    </div>
+                    <p> Después de salir de sigilo o de usar algún deslizamiento, salto, teleportación o teleportación instantánea, infligir daño a un campeón te otorga 10 de letalidad y 8 de penetración mágica durante 5 s. Enfriamiento de 4 s.
+                    </p>
+                </div>
+            </section>
+            <section class="col-4">
+                <h3 class="b"> Ranura 2 </h3>
+                <div>
+                    <div id="tooltip">
+                        <span id="tooltiptext"> Guardián zombi </span>
+                        <span> <img loading="lazy" src="../../img/runas/dominacion/Zombie_Ward.png" alt="Guardián zombi" class="ranura1"> </span>
+                    </div>
+                    <p> Cuando eliminas a un guardián, un guardián zombie aliado aparece en su lugar. Además, cuando tus guardianes desaparecen, resucitan como guardianes zombis. Los guardianes zombis son visibles, duran 180 s y no cuentan para el límite de guardianes. </p>
+                </div>
+                <div>
+                    <div id="tooltip">
+                        <span id="tooltiptext"> Poro fantasmal </span>
+                        <span> <img loading="lazy" src="../../img/runas/dominacion/Ghost_Poro.png" alt="Poro fantasmal" class="ranura1"> </span>
+                    </div>
+                    <p> Entra en la maleza para invocar un poro tras una breve canalización. El poro permanecerá ahí ofreciéndote visión hasta que invoques a uno nuevo. Si el enemigo entra en la maleza con un poro en ella, lo espantará y provocará que Poro fantasmal se ponga en enfriamiento durante 3 s. La canalización se interrumpe al entrar en combate contra un campeón.
+                    </p>
+                </div>
+                <div>
+                    <div id="tooltip">
+                        <span id="tooltiptext"> Colección de globos oculares </span>
+                        <span> <img loading="lazy" src="../../img/runas/dominacion/Eyeball_Collection.png" alt="Colección de globos oculares" class="ranura1"> </span>
+                    </div>
+                    <p> Coleccionas globos por cada campeón derribado, hasta 10. Obtienes 1.2 DA adicional o 2 PH (adaptable) por globo recolectado, hasta 12 DA adicional o 20 PH (adaptable). Completar tu colección otorga 6 DA adicional o 10 PH (adaptable) adicional.
+                    </p>
+                </div>
+            </section>
+            <section class="col-4">
+                <h3 class="b"> Ranura 3 </h3>
+                <div>
+                    <div id="tooltip">
+                        <span id="tooltiptext"> Cazador voraz </span>
+                        <span> <img loading="lazy" src="../../img/runas/dominacion/Ravenous_Hunter.png" alt="Cazador voraz" class="ranura1"> </span>
+                    </div>
+                    <p> Te curas un porcentaje del daño que infliges con tus habilidades. Curación 2,5% + 2,5% por acumulación de Cazarrecompensas. La primera vez que asesines o asistas en el asesinato de cada campeón enemigo consigues una acumulación de Cazarrecompensas. La curación se reduce un tercio para las habilidades de área de efecto. </p>
+                </div>
+                <div>
+                    <div id="tooltip">
+                        <span id="tooltiptext"> Cazador ingenioso </span>
+                        <span> <img loading="lazy" src="../../img/runas/dominacion/Ingenious_Hunter.png" alt="Cazador ingenioso" class="ranura1"> </span>
+                    </div>
+                    <p> Obtienes un 10% de reducción de enfriamiento de las activas de objetos y un 6% adicional por acumulación de Cazarrecompensas (talismanes incluidos). El primer asesinato o asistencia de cada campeón enemigo otorga una acumulación de Cazarrecompensas.
+                    </p>
+                </div>
+                <div>
+                    <div id="tooltip">
+                        <span id="tooltiptext"> Cazador incesante </span>
+                        <span> <img loading="lazy" src="../../img/runas/dominacion/Relentless_Hunter.png" alt="Cazador incesante" class="ranura1"> </span>
+                    </div>
+                    <p> Obtienes 8 de velocidad de movimiento fuera de combate más 8 por acumulación de Cazarrecompensas. El primer asesinato o asistencia de cada campeón enemigo otorga una acumulación de Cazarrecompensas.
+                    </p>
+                </div>
+                <div>
+                    <div id="tooltip">
+                        <span id="tooltiptext"> Cazador definitivo </span>
+                        <span> <img loading="lazy" src="../../img/runas/dominacion/Ultimate_Hunter.png" alt="Cazador definitivo" class="ranura1"> </span>
+                    </div>
+                    <p> Obtienes 6 de aceleración máxima más 5 por acumulación de Cazarrecompensas, hasta 31 con 5 acumulaciones. Derribar a cada campeón enemigo otorga una acumulación de Cazarrecompensas.
+                    </p>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <!-- REDES SOCIALES -->
+        <div class="redes">
+            <a href="https://github.com/IgnacioArenas" target="_blank" ><img src="../../img/redes/github.png" alt="github"></a>
+            <a href="https://www.tiktok.com/@oldaatrox" target="_blank" ><img src="../../img/redes/tiktok.png" alt="tiktok"></a>
+            <a href="https://www.leagueofgraphs.com/es/summoner/las/Aatrox" target="_blank"> <img src="../../img/redes/log-icon-modified.png" alt="Mi cuenta"></a>
+            <a href="https://twitter.com/OldAatrox" target="_blank" ><img src="../../img/redes/twitter.png" alt="Twitter"></a>
+            <a href="https://www.youtube.com/channel/UC-E_4Bjw8NsO7YOPRUpiVYQ" target="_blank" ><img src="../../img/redes/youtube.png" alt="YouTube"></a>
+        </div>
+        <div>
+            <p> 2022 Old Aatrox. Old Aatrox no está avalado por Riot Games y no refleja los puntos de vista u opiniones de Riot Games o de cualquier persona oficialmente involucrada en la producción o gestión de League of Legends. League of Legends y Riot Games son marcas comerciales o marcas registradas de Riot Games, Inc. League of Legends © Riot Games, Inc. </p>
+        </div>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="League of Legends">
+    <meta name="keywords"  content="AATROX, LOL, CAMPEONES, RUNAS, LEAGUE OF LEGENDS">
+
+    <link rel="shortcut icon" type="x-icon" href="../../img/logo/oa.png">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/main.css">
+        <title> Brujería </title>
+    </head>
+<body class="bruj">
+      <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid h-100">
+                <a class="navbar-brand" href="../../index.html"> <img src="../../img/logo/oa-logo.png" alt="Inicio"> </a>
+                <button class="navbar-toggler bg-danger p-2 m-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"> </span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav fs-6">
+                    <a class="nav-link link-danger text-light" href="../../pages/campeones.html"> Campeones </a>
+                    <a class="nav-link link-danger text-light" href="../../pages/objetos.html"> Objetos </a>
+                    <a class="nav-link link-danger text-primary" href="../../pages/runas.html"> Runas </a>
+                    <a class="nav-link link-danger text-light" href="../../pages/hechizos.html"> Hechizos </a>
+                </div>
+            </div>
+        </nav>
+      </header>
+      <main class="container-fluid">
+        <section class="runas row">
+            <section class="col-12">
+                <h2 class="p"> Los personajes adecuados para equipar estas runas son los magos de control (y aquellos personajes que hacen daño a distancia con habilidades cada poco tiempo). Se trata de una rama muy versátil que también acoge personajes tipo support o los que necesitan velocidad de movimiento. </h2>
+                <h1 class="c"> Rama principal - Atributos esenciales </h1>
+                <div>
+                    <img loading="lazy" src="../../img/runas/brujeria/summon_aery.png" alt="Invocar: Aery">
+                    <p> <span class="span-3"> Invocar a Aery: </span> Tus ataques y habilidades envían a Aery a un objetivo para dañar a los enemigos u otorgar un escudo a los aliados. Daño 20-60 según el nivel (+0,10 de PH y +0,15 de DA adicional). Escudo 30-80 según el nivel (+0,25 de PH y +0,40 de DA adicional). No se puede enviar a Aery de nuevo hasta que vuelva a ti. </p>
+                </div>
+                <div>
+                    <img loading="lazy" src="../../img/runas/brujeria/arcane_comet.png" alt="Cometa arcano">
+                    <p> <span class="span-3"> Cometa arcano: </span> Infligir daño con una habilidad a un campeón proyecta un cometa hacia su ubicación o, si Cometa arcano está en enfriamiento, reduce el enfriamiento restante. Daño adaptable 30-100 según el nivel (+0,20 de PH y +0,35 de DA adicional). Enfriamiento 20-8 s. Reducción de enfriamiento (objetivo único 20%, área de efecto 10% y daño prolongado 5%). </p>
+                </div>
+                <div>
+                    <img loading="lazy" src="../../img/runas/brujeria/phase_rush.png" alt="Fase veloz">
+                    <p> <span class="span-3"> Irrupción de fase: </span> Golpear a un campeón enemigo con 3 ataques o habilidades diferentes en un margen de 3 s otorga un 15-40% de velocidad de movimiento (según el nivel). Duración 3 s. Enfriamiento 15 s. Cuerpo a cuerpo además, otorga un 75% de resistencia a la ralentización durante ese tiempo. </p>
+                </div>
+            </section>
+        </section>
+        <section class="ranuras row">
+            <section class="col-4">
+                <h3 class="c"> Ranura 1 </h3>
+                <div>
+                    <div id="tooltip">
+                        <span id="tooltiptext"> Orbe anulador </span>
+                        <span> <img loading="lazy" src="../../img/runas/brujeria/Nullifying_Orb_rune_league_of_legends.png" alt="Orbe anulador" class="ranura1"> </span>
+                    </div>
+                    <p> Dañar a campeones con movimiento o acciones reducidas inflige 12-30 de daño verdadero adicional (según el nivel). Enfriamiento de 4 s. Se activa con el daño de después de la inmovilización. </p>
+                </div>
+                <div>
+                    <div id="tooltip">
+                        <span id="tooltiptext"> Banda de maná </span>
+                        <span> <img loading="lazy" src="../../img/runas/brujeria/Manaflow_Band_rune_icons.png" alt="Banda de maná" class="ranura1"> </span>
+                    </div>
+                    <p> Te curas cuando dañas a un campeón enemigo. Curación 18-35 (+0,20 de DA adicional, +0,1 de PH) de vida (según el nivel). Enfriamiento de 20 s. </p>
+                </div>
+                <div>
+                    <div id="tooltip">
+                        <span id="tooltiptext"> El sombrero definitivo </span>
+                        <span> <img loading="lazy" src="../../img/runas/brujeria/Nimbus_Cloak_rune_bug_lol.png" alt="El sombrero definitivo" class="ranura1"> </span>
+                    </div>
+                    <p> Después de salir de sigilo o de usar algún deslizamiento, salto, teleportación o teleportación instantánea, infligir daño a un campeón te otorga 10 de letalidad y 8 de penetración mágica durante 5 s. Enfriamiento de 4 s.
+                    </p>
+                </div>
+            </section>
+            <section class="col-4">
+                <h3 class="c"> Ranura 2 </h3>
+                <div>
+                    <div id="tooltip">
+                        <span id="tooltiptext"> Trascendencia </span>
+                        <span> <img loading="lazy" src="../../img/runas/brujeria/Transcendence_rune.png" alt="Trascendencia" class="ranura1"> </span>
+                    </div>
+                    <p> Obtienes un 10% de reducción de enfriamiento cuando alcanzas el nivel 10. Cada porcentaje de reducción de enfriamiento que exceda el límite se convierte en una bonificación adaptable de 1,2 de daño de ataque o de 2 de poder de habilidad. </p>
+                </div>
+                <div>
+                    <div id="tooltip">
+                        <span id="tooltiptext"> Celeridad </span>
+                        <span> <img loading="lazy" src="../../img/runas/brujeria/Celerity_lol_rune_icon.png" alt="Celeridad" class="ranura1"> </span>
+                    </div>
+                    <p> Obtienes un aumento del 4% de velocidad de movimiento y se añade un 8% de tu velocidad de movimiento adicional a tu PH o DA adaptable (según el nivel).
+                    </p>
+                </div>
+                <div>
+                    <div id="tooltip">
+                        <span id="tooltiptext"> Concentración absoluta </span>
+                        <span> <img loading="lazy" src="../../img/runas/brujeria/Absolute_Focus_rune_league.png" alt="Concentración absoluta" class="ranura1"> </span>
+                    </div>
+                    <p> Concentración absoluta: Mientras estés por encima del 70% de vida, obtienes una bonificación adaptable de hasta 24 de daño de ataque o 40 de poder de habilidad (según el nivel).
+                    </p>
+                </div>
+            </section>
+            <section class="col-4">
+                <h3 class="c"> Ranura 3 </h3>
+                <div>
+                    <div id="tooltip">
+                        <span id="tooltiptext"> Piroláser </span>
+                        <span> <img loading="lazy" src="../../img/runas/brujeria/Scorch_rune.png" alt="Piroláser" class="ranura1"> </span>
+                    </div>
+                    <p> Piroláser: Tu siguiente habilidad prende fuego a los campeones e inflige 30-60 de daño mágico adicional (según el nivel) tras 1 s. Enfriamiento de 20 s. </p>
+                </div>
+                <div>
+                    <div id="tooltip">
+                        <span id="tooltiptext"> Caminar sobre agua </span>
+                        <span> <img loading="lazy" src="../../img/runas/brujeria/Waterwalking_rune.png" alt="Caminar sobre agua" class="ranura1"> </span>
+                    </div>
+                    <p> Caminar sobre agua: Obtienes 25 de velocidad de movimiento y una bonificación adaptable de hasta 18 de daño de ataque o 30 de poder de habilidad (en función del nivel) cuando estás en el río.
+                    </p>
+                </div>
+                <div>
+                    <div id="tooltip">
+                        <span id="tooltiptext"> Se avecina tormenta </span>
+                        <span> <img loading="lazy" src="../../img/runas/brujeria/Gathering_Storm_lol_rune.png" alt="Se avecina tormenta" class="ranura1"> </span>
+                    </div>
+                    <p> Se avecina tormenta: cada 10 min, obtienes PH o DA adaptable (10 min +8 de PH o 5 de DA, 20 min +24 de PH o 5¡14 de DA, 30 min +48 de PH o 29 de DA, 40 min +80 de PH o 48 de DA, 50 min +120 de PH o 72 de DA, 60 min +168 de PH o 101 de DA).
+                    </p>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <!-- REDES SOCIALES -->
+        <div class="redes">
+            <a href="https://github.com/IgnacioArenas" target="_blank" ><img src="../../img/redes/github.png" alt="Github"></a>
+            <a href="https://www.tiktok.com/@oldaatrox" target="_blank" ><img src="../../img/redes/tiktok.png" alt="TikTok"></a>
+            <a href="https://www.leagueofgraphs.com/es/summoner/las/Aatrox" target="_blank"> <img src="../../img/redes/log-icon-modified.png" alt="Mi cuenta"></a>
+            <a href="https://twitter.com/OldAatrox" target="_blank" ><img src="../../img/redes/twitter.png" alt="Twitter"></a>
+            <a href="https://www.youtube.com/channel/UC-E_4Bjw8NsO7YOPRUpiVYQ" target="_blank" ><img src="../../img/redes/youtube.png" alt="YouTube"></a>
+        </div>
+        <div>
+            <p> 2022 Old Aatrox. Old Aatrox no está avalado por Riot Games y no refleja los puntos de vista u opiniones de Riot Games o de cualquier persona oficialmente involucrada en la producción o gestión de League of Legends. League of Legends y Riot Games son marcas comerciales o marcas registradas de Riot Games, Inc. League of Legends © Riot Games, Inc. </p>
+        </div>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>

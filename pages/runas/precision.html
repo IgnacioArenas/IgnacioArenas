@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="League of Legends">
+    <meta name="keywords"  content="AATROX, LOL, CAMPEONES, RUNAS, LEAGUE OF LEGENDS">
+
+    <link rel="shortcut icon" type="x-icon" href="../../img/logo/oa.png">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/main.css">
+    <title> Precisión </title>
+</head>
+<body class="pres">
+      <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid h-100">
+                <a class="navbar-brand" href="../../index.html"> <img src="../../img/logo/oa-logo.png" alt="Inicio"> </a>
+                <button class="navbar-toggler bg-danger p-2 m-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"> </span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav fs-6">
+                    <a class="nav-link link-danger text-light" href="../../pages/campeones.html"> Campeones </a>
+                    <a class="nav-link link-danger text-light" href="../../pages/objetos.html"> Objetos </a>
+                    <a class="nav-link link-danger text-warning" href="../../pages/runas.html"> Runas </a>
+                    <a class="nav-link link-danger text-light" href="../../pages/hechizos.html"> Hechizos </a>
+                </div>
+            </div>
+        </nav>
+      </header>
+      <main class="container-fluid">
+        <section class="runas row">
+            <section class="col-12">
+                <h2 class="p"> Dedicada a los personajes que se aprovechan de realizar daños en combates de larga duración o que poseen mucha velocidad de ataque. Por ejemplo los Tiradores, AD Carry, o Luchadores. </h2>
+                <h1 class="a"> Rama principal - Atributos esenciales </h1>
+                <div>
+                    <img loading="lazy" src="../../img/runas/precision/rune-p1.png" alt="Ataque intensificado">
+                    <p> <span class="span"> Ataque intensificado: </span> Golpear a un campeón enemigo con 3 ataques básicos consecutivos inflige 30-120 de daño adaptable adicional (según el nivel) y lo deja vulnerable, aumentando un 12% el daño que recibe de todas las fuentes durante 6 s. </p>
+                </div>
+                <div>
+                    <img loading="lazy" src="../../img/runas/precision/rune-p2.png" alt="Cadencia letal">
+                    <p> <span class="span"> Cadencia letal: </span> Otorga un (15 % cuerpo a cuerpo/5 % a distancia) de velocidad de ataque durante 6 s cuando se está golpeando a, al menos, un campeón enemigo con cada autoataque. Dicho efecto se acumula hasta 6 veces. Al alcanzar el límite de este efecto, otorga (50 cuerpo a cuerpo/100 a distancia) de alcance y aumenta el límite de tu velocidad de ataque de 2,5 a 10. </p>
+                </div>
+                <div>
+                    <img loading="lazy" src="../../img/runas/precision/rune-p3.png" alt="Pies veloces">
+                    <p> <span class="span"> Pies veloces: </span> Atacar y moverse genera acumulaciones de energía. A las 100 acumulaciones, tu siguiente ataque será con Vigor. Los ataques con Vigor te curan 5-50 (+0,10 de DA adicional, +0,20 de PH) de vida y te otorgan +30% de velocidad de movimiento durante 1 s. La curación tiene una efectividad del 60% en súbditos. </p>
+                </div>
+                <div>
+                    <img loading="lazy" src="../../img/runas/precision/rune-p4.png" alt="Conquistador">
+                    <p> <span class="span"> Conquistador: </span> Los ataques básicos contra campeones enemigos otorgan acumulaciones. Las habilidades y hechizos que infligen daño a un campeón enemigo siempre otorgan 2 acumulaciones. Cada acumulación otorga 1,02 − 2,52 (según el nivel) DA adicional o 1,7 − 4,2 (según el nivel) PH (adaptable) durante 6 segundos, acumulándose hasta 12 veces, para un máximo de 14,4 − 36 (según el nivel) DA adicional o 24 − 60 (según el nivel) PH (adaptable). Cuando están completamente acumulados, los campeones se curan por del daño de post mitigación infligido a los campeones enemigos.
+                    </p>
+                </div>
+            </section>
+        </section>
+        <section class="ranuras row">
+            <section class="col-4">
+                <h3 class="a"> Ranura 1 </h3>
+                <div>
+                    <div id="tooltip">
+                        <span id="tooltiptext"> Supercuración </span>
+                        <span> <img loading="lazy" src="../../img/runas/precision/Overheal.png" alt="Supercuración" class="ranura1"> </span>
+                    </div>
+                    <p> El exceso de curación que recibes se convierte en un escudo de hasta el 10% de tu vida total más 10. El escudo se crea a partir del 30% de tu curación excedente o del 300% de la curación excedente de los aliados. </p>
+                </div>
+                <div>
+                    <div id="tooltip">
+                        <span id="tooltiptext"> Triunfo </span>
+                        <span> <img loading="lazy" src="../../img/runas/precision/Triumph.png" alt="Triunfo" class="ranura1"> </span>
+                    </div>
+                    <p> Los asesinatos y asistencias hacen que recuperes un 15% de la vida que te falte y te otorgan 25 de oro adicional. </p>
+                </div>
+                <div>
+                    <div id="tooltip">
+                        <span id="tooltiptext"> Claridad mental </span>
+                        <span> <img loading="lazy" src="../../img/runas/precision/Presence_of_Mind.png" alt="Claridad mental" class="ranura1"> </span>
+                    </div>
+                    <p> Durante 5 s tras subir de nivel o conseguir un asesinato o asistencia, el maná que gastes se restaura por completo.
+                    </p>
+                </div>
+            </section>
+            <section class="col-4">
+                <h3 class="a"> Ranura 2 </h3>
+                <div>
+                    <div id="tooltip">
+                        <span id="tooltiptext"> Leyenda - Presteza </span>
+                        <span> <img loading="lazy" src="../../img/runas/precision/Legend-_Alacrity.png" alt="Leyenda - Presteza" class="ranura1"> </span>
+                    </div>
+                    <p> Obtienes un 3% de velocidad de ataque y un 1,5% adicional por cada acumulación de Leyenda (10 acumulaciones como máximo). </p>
+                </div>
+                <div>
+                    <div id="tooltip">
+                        <span id="tooltiptext"> Leyenda - Tenacidad </span>
+                        <span> <img loading="lazy" src="../../img/runas/precision/Legend-_Tenacity.png" alt="Leyenda - Tenacidad" class="ranura1"> </span>
+                    </div>
+                    <p> Obtienes un 5% de tenacidad y un 1,5% adicional por cada acumulación de Leyenda (10 acumulaciones como máximo).
+                    </p>
+                </div>
+                <div>
+                    <div id="tooltip">
+                        <span id="tooltiptext"> Leyenda - Linaje </span>
+                        <span> <img loading="lazy" src="../../img/runas/precision/Legend-_Bloodline.png" alt="Leyenda - Linaje" class="ranura1"> </span>
+                    </div>
+                    <p> Obtienes un 0,8% de robo de vida por cada acumulación de Leyenda (10 acumulaciones como máximo).
+                    </p>
+                </div>
+            </section>
+            <section class="col-4">
+                <h3 class="a"> Ranura 3 </h3>
+                <div>
+                    <div id="tooltip">
+                        <span id="tooltiptext"> Golpe de gracia </span>
+                        <span> <img loading="lazy" src="../../img/runas/precision/Coup_de_Grace.png" alt="Golpe de gracia" class="ranura1"> </span>
+                    </div>
+                    <p> Infliges un 10% de daño a los campeones que estén por debajo del 40% de vida. Además, los asesinatos o asistencias otorgan una bonificación adaptable de 9 de daño de ataque o de 15 de poder de habilidad, durante 10 s. </p>
+                </div>
+                <div>
+                    <div id="tooltip">
+                        <span id="tooltiptext"> Derribado </span>
+                        <span> <img loading="lazy" src="../../img/runas/precision/Cut_Down.png" alt="Derribado" class="ranura1"> </span>
+                    </div>
+                    <p> Infliges hasta un 4% más de daño a todos los campeones que tengan 150 más de vida máxima que tú, lo que aumenta a un 10% con una diferencia de 2000 de vida máxima.
+                    </p>
+                </div>
+                <div>
+                    <div id="tooltip">
+                        <span id="tooltiptext"> Último esfuerzo </span>
+                        <span> <img loading="lazy" src="../../img/runas/precision/Last_Stand.png" alt="Último esfuerzo" class="ranura1"> </span>
+                    </div>
+                    <p> Infliges un 5-12% más de daño a los campeones mientras estés por debajo del 60% de vida. El daño máximo se consigue al llegar al 30% de vida.
+                    </p>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <!-- REDES SOCIALES -->
+        <div class="redes">
+            <a href="https://github.com/IgnacioArenas" target="_blank" ><img src="../../img/redes/github.png" alt="github"></a>
+            <a href="https://www.tiktok.com/@oldaatrox" target="_blank" ><img src="../../img/redes/tiktok.png" alt="tiktok"></a>
+            <a href="https://www.leagueofgraphs.com/es/summoner/las/Aatrox" target="_blank"> <img src="../../img/redes/log-icon-modified.png" alt="Mi cuenta"></a>
+            <a href="https://twitter.com/OldAatrox" target="_blank" ><img src="../../img/redes/twitter.png" alt="Twitter"></a>
+            <a href="https://www.youtube.com/channel/UC-E_4Bjw8NsO7YOPRUpiVYQ" target="_blank" ><img src="../../img/redes/youtube.png" alt="YouTube"></a>
+        </div>
+        <div>
+            <p> 2022 Old Aatrox. Old Aatrox no está avalado por Riot Games y no refleja los puntos de vista u opiniones de Riot Games o de cualquier persona oficialmente involucrada en la producción o gestión de League of Legends. League of Legends y Riot Games son marcas comerciales o marcas registradas de Riot Games, Inc. League of Legends © Riot Games, Inc. </p>
+        </div>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>

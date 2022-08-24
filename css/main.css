@@ -1,0 +1,415 @@
+@charset "UTF-8";
+/* RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+/* BODY */
+body {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/aatrox/old-aatrox.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  cursor: url(../img/mouse/mouse-3.png), auto;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  justify-items: center;
+  text-align: center; }
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  background: black;
+  width: 2px; }
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(red, red);
+  border-radius: 5px; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(darkred, darkred);
+  border-radius: 5px; }
+
+/* NAV  */
+nav {
+  background: linear-gradient(black, black);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-bottom: 1px solid red; }
+
+/* MAIN */
+main {
+  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  grid-area: main;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+  main p {
+    color: white; }
+
+.inicio {
+  margin-top: 4rem; }
+
+.campeones {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; }
+
+.contenido {
+  margin-top: 4.5rem;
+  margin-bottom: 5rem; }
+  .contenido p {
+    font-size: small; }
+  .contenido h1 {
+    color: white;
+    font-size: 1.5rem;
+    margin: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+  .contenido h2 {
+    color: white;
+    font-size: 1.5rem;
+    margin: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+  .contenido h3 {
+    color: white;
+    font-size: 1.5rem;
+    margin: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+  .contenido h4 {
+    color: white;
+    font-size: 1.5rem;
+    margin: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+
+.descripcion {
+  font-size: 1rem;
+  color: aqua;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+
+.runas-runas {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem; }
+
+.runas section img {
+  width: 100%; }
+
+.runas section .a {
+  font-size: medium;
+  margin-bottom: -1rem;
+  margin-top: 1rem;
+  padding: 0rem;
+  color: yellow; }
+
+.runas section .b {
+  font-size: medium;
+  margin-bottom: -1rem;
+  margin-top: 1rem;
+  padding: 0rem;
+  color: red; }
+
+.runas section .c {
+  font-size: medium;
+  margin-bottom: -1rem;
+  margin-top: 1rem;
+  padding: 0rem;
+  color: violet; }
+
+.runas section .d {
+  font-size: medium;
+  margin-bottom: -1rem;
+  margin-top: 1rem;
+  padding: 0rem;
+  color: greenyellow; }
+
+.runas section .e {
+  font-size: medium;
+  margin-bottom: -1rem;
+  margin-top: 1rem;
+  padding: 0rem;
+  color: lightseagreen; }
+
+.runas section .p {
+  font-size: small;
+  color: aqua;
+  margin-top: 0.5rem; }
+
+.runas section div {
+  display: flex;
+  flex-direction: row; }
+  .runas section div p {
+    font-size: small;
+    color: white;
+    margin-top: 2rem; }
+  .runas section div img {
+    width: 10%; }
+  .runas section div .span {
+    color: yellow;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace; }
+  .runas section div .span-2 {
+    color: red;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace; }
+  .runas section div .span-3 {
+    color: violet;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace; }
+
+.ranuras section .a {
+  font-size: medium;
+  margin-bottom: 0rem;
+  padding: 0rem;
+  color: yellow; }
+
+.ranuras section .b {
+  font-size: medium;
+  margin-bottom: 0rem;
+  padding: 0rem;
+  color: red; }
+
+.ranuras section .c {
+  font-size: medium;
+  margin-bottom: 0rem;
+  padding: 0rem;
+  color: violet; }
+
+.ranuras section .d {
+  font-size: medium;
+  margin-bottom: 0rem;
+  padding: 0rem;
+  color: lime; }
+
+.ranuras section .e {
+  font-size: medium;
+  margin-bottom: 0rem;
+  padding: 0rem;
+  color: lightseagreen; }
+
+.ranuras section p {
+  font-size: small; }
+
+.ranuras section div {
+  margin: 1rem; }
+
+.hechizos {
+  display: flex; }
+  .hechizos div {
+    flex-direction: row; }
+  .hechizos .titulo {
+    color: tomato; }
+
+/* FOOTER */
+footer {
+  min-height: 5vh;
+  color: white;
+  background: linear-gradient(rgba(75, 0, 0, 0.75), rgba(75, 0, 0, 0.75));
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+  footer p {
+    margin: 0;
+    padding: 0;
+    font-size: 0.7rem; }
+  footer .redes {
+    padding: 0.5rem;
+    justify-content: center;
+    gap: 0.8rem;
+    display: flex; }
+
+/* MEDIA QUERIES */
+@media (min-width: 320px) and (max-width: 800px) {
+  .runas img {
+    width: 50px;
+    height: 50px;
+    margin: 1rem; }
+  .inicio {
+    margin-bottom: 10rem; }
+  .aatrox {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url(../img/aatrox/aatrox-2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    justify-content: center;
+    text-align: center; }
+    .aatrox .description {
+      font-size: 0.5rem; }
+  .contenido {
+    width: 100%;
+    margin-top: 6rem;
+    margin-bottom: 8rem; }
+  .campeones-responsive {
+    width: 105%;
+    margin-top: 6rem;
+    overflow-x: hidden; }
+  .campeones {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; } }
+
+/* HOVER IMG RUNAS */
+#tooltip {
+  position: relative;
+  cursor: pointer; }
+
+#tooltiptext {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  background-color: #000;
+  color: #fff;
+  white-space: nowrap;
+  padding: 10px 15px;
+  border-radius: 7px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease; }
+
+#tooltiptext::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  border: 15px solid;
+  border-color: #000 #0000 #0000 #0000; }
+
+#tooltip:hover #tooltiptext {
+  top: -130%;
+  visibility: visible;
+  opacity: 1; }
+
+/* HOVER IMG CAMPEONES */
+.image {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.image__img {
+  display: block;
+  width: 100%;
+  border: 1px solid black; }
+
+.image__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  font-family: "Quicksand", sans-serif;
+  color: darkred;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  opacity: 0;
+  transition: opacity 0.25s; }
+
+.image__overlay:hover {
+  opacity: 1;
+  border-style: solid; }
+
+.image__overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s; }
+
+.image__overlay:hover > * {
+  transform: translateY(0); }
+
+.image__title {
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  font-weight: 900; }
+
+.image__title:hover {
+  color: red; }
+
+/* AATROX */
+.aatrox {
+  background: url(../img/aatrox/aatrox.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center; }
+  .aatrox main {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    justify-content: center; }
+    .aatrox main h1 {
+      color: red; }
+    .aatrox main h2 {
+      font-size: 1rem;
+      font-family: 'Courier New', Courier, monospace; }
+    .aatrox main .luchador {
+      font-size: small;
+      color: lightblue; }
+    .aatrox main .description {
+      margin: 1rem 1rem;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+    .aatrox main .abilities {
+      width: 100%;
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); }
+      .aatrox main .abilities .r {
+        display: flex;
+        width: 100%; }
+        .aatrox main .abilities .r div {
+          width: 100%; }
+        .aatrox main .abilities .r video {
+          width: 450px;
+          height: 300px; }
+
+/* BRUJERÍA */
+.bruj {
+  background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/runas/runas/Sorcery_splash_art.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center; }
+
+/* DOMINACIÓN */
+.dom {
+  background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/runas/runas/Domination_splash_art.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center; }
+
+/* PRECISIÓN */
+.pres {
+  background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/runas/runas/Precision_splash_art.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center; }
+
+/* VALOR */
+.val {
+  background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/runas/runas/Resolve_splash_art.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center; }
+
+/* INSPIRACIÓN */
+.ins {
+  background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/runas/runas/Inspiration_splash_art.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center; }
